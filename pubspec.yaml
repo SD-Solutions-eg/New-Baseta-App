@@ -24,9 +24,9 @@ dependencies:
   easy_image_viewer: ^1.0.4
   enum_to_string: ^2.0.1
   equatable: ^2.0.3
-  firebase_auth: ^3.11.1
-  firebase_core: ^1.24.0
-  firebase_messaging: ^13.0.4
+  firebase_auth: 4.1.1
+  firebase_core: 2.2.0
+  firebase_messaging: 14.0.1
   flutter:
     sdk: flutter
   flutter_animator: ^3.2.2

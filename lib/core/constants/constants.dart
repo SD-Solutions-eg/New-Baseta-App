@@ -1,4 +1,7 @@
-const baseUrlBasita = 'https://business.basita.app/wp-json';
+const baseUrlBasita =
+
+    'https://basita.sdsolutionseg.com/wp-json';
+    // 'https://business.basita.app/wp-json';
 
 const appNameEn = 'Basita';
 
@@ -9,7 +12,10 @@ const String _phonePattern = r'(^(?:[+0]9)?[0-9]{10,12}$)';
 final RegExp phoneValidationRegExp = RegExp(_phonePattern);
 
 //Admin Basic Auth
-const adminBasicAuth = 'Basic YXBpOkUkZGwoWlB0a2x2a1FwQjQ3MjJlcmklUQ==';
+const adminBasicAuth =
+
+    'cs_1c3824c16c7852eb023c78a36f9c14ee11d6a5b8';
+    // 'Basic YXBpOkUkZGwoWlB0a2x2a1FwQjQ3MjJlcmklUQ==';
 
 const contentTypeTxt = 'Content-Type';
 const applicationJson = 'application/json';
