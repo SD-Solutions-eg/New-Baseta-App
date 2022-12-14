@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>90349006730-b5i6e4eo5oinvgrc67i9akm3imq3sges.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.90349006730-b5i6e4eo5oinvgrc67i9akm3imq3sges</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>90349006730-4d9fe0524jstlsa9r4287850najkuepq.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAERo41-3cvA-2le41oSpIqqfbsGr6wQuE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>90349006730</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.scopelinks.basitaapp</string>
+	<key>PROJECT_ID</key>
+	<string>basita-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>basita-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:90349006730:ios:842445aae1762555f22273</string>
+	<key>DATABASE_URL</key>
+	<string>https://basita-app-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

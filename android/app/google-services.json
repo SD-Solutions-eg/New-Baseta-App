@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "90349006730",
+    "firebase_url": "https://basita-app-default-rtdb.firebaseio.com",
+    "project_id": "basita-app",
+    "storage_bucket": "basita-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90349006730:android:d74ba7eb3e947a09f22273",
+        "android_client_info": {
+          "package_name": "com.scopelinks.basitaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90349006730-b9lihvmrg0qa22h1ennbevc7ri0jm49a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scopelinks.basitaapp",
+            "certificate_hash": "e9c381a8e5a6f898280bdd23c406708cfa83b098"
+          }
+        },
+        {
+          "client_id": "90349006730-k5tgn4fa9963p4r3f9tcftkitppfvopr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scopelinks.basitaapp",
+            "certificate_hash": "866b719e568248357ed97b3ac9020351faa2da8b"
+          }
+        },
+        {
+          "client_id": "90349006730-q5o2k8ialhrdo257m6thshv9mmfd6545.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scopelinks.basitaapp",
+            "certificate_hash": "9d3252de1aa89e45067a7eedad3524a0834c40b7"
+          }
+        },
+        {
+          "client_id": "90349006730-rr4d6moumj6hu7h7b460s2pl6fmbmevv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scopelinks.basitaapp",
+            "certificate_hash": "01ee84ddb0dbd82d69482049e22d15daea4aacb9"
+          }
+        },
+        {
+          "client_id": "90349006730-aa5tgvigutv5hekc3smpapo7g4mce863.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3D8XNDC6grOLJjBUsL1K32ini7RewpMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90349006730-aa5tgvigutv5hekc3smpapo7g4mce863.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "90349006730-8dhm3tskmvprdpjlj1f4q92rgikb2jfe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.scopelinks.allin1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
