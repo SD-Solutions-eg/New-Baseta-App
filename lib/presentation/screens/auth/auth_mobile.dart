@@ -653,9 +653,10 @@ class _AuthScreenMobileState extends State<AuthScreenMobile> {
                       phone: _phoneCtrl.text,
                       password: _passwordCtrl.text,
                     );
-                    await CustomerCubit.get(context).updateUserMobile(
-                        id: FirebaseAuthBloc.currentUser!.id,
-                        mobile: _phoneCtrl.text);
+
+                    // await CustomerCubit.get(context).updateUserMobile(
+                    //     id: FirebaseAuthBloc.currentUser!.id,
+                    //     mobile: _phoneCtrl.text);
                   } else if (state is SendSmsFailed) {
                     customSnackBar(context: context, message: state.error);
                   } else if (state is CheckOtpFailed) {

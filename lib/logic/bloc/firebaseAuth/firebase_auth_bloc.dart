@@ -1,6 +1,7 @@
 // ignore_for_file: invalid_use_of_visible_for_testing_member
 
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:allin1/core/constants/constants.dart';
 import 'package:allin1/core/languages/language_ar.dart';
@@ -81,7 +82,7 @@ class FirebaseAuthBloc extends Bloc<FirebaseAuthEvent, FirebaseAuthState> {
 
         yield VerificationMailSent();
       } catch (e) {
-        // log('Verification Failed : $e');
+         log('Verification Failed : $e');
         yield VerificationMailFailed(error: e.toString());
       }
     } else if (event is SignOutEvent) {

@@ -491,7 +491,8 @@ class _HomeTabMobileState extends State<HomeTabMobile> {
     return BlocBuilder<ProductsCubit, ProductsState>(
       builder: (context, state) {
         final partners = categoryCubit.featuredPartners;
-
+        print('partener section :::::::::');
+        print(partners);
         return SizedBox(
           height: 260.w,
           child: ListView.separated(

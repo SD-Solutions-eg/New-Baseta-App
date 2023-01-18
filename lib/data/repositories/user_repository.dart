@@ -40,6 +40,7 @@ class UserRepository {
 
   Future<UserDataModel?> getUserData({required int id}) async {
     try {
+      print('getUserData');
       final userData = await _apiServices.getUserDataModel(id: id);
       if (userData.isNotEmpty) {
         final userDataModel = UserDataModel.fromMap(userData);
@@ -212,10 +213,11 @@ class UserRepository {
 
   Future<UserModel> getUserByEmail({required String email}) async {
     try {
+
       final userData = await _apiServices.getUserByEmail(email: email);
-
+      print('getUserByEmail');
       final userModel = UserModel.fromMap(userData);
-
+      print('getUserByEmail2');
       final userDataModel = await getUserData(id: userModel.id);
 
       final newUserModel = userModel.copyWith(

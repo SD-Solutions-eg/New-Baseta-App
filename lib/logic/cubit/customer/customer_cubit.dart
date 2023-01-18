@@ -172,6 +172,7 @@ class CustomerCubit extends Cubit<CustomerState> {
       emit(SendSmsFailed(error: LanguageAr().connectionFailed));
     } else {
       try {
+        print('sendSmsOtp');
         final SMSResponseModel result =
             await userRepo.sendSmsOtp(phoneNumber: phoneNumber);
         print('type: ${result.type}');

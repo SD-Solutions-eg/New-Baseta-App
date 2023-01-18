@@ -3,8 +3,6 @@
 import 'package:allin1/core/constants/constants.dart';
 import 'package:allin1/core/theme/colors.dart';
 
-
-
 const baseUrl = baseUrlBasita;
 
 const appName = appNameEn;

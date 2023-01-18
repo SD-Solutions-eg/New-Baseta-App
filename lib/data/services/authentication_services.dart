@@ -181,6 +181,7 @@ class AuthenticationServices {
 
   Future<Map<String, dynamic>> getUserDataModel({required int id}) async {
     try {
+      print('getUserDataModel');
       final query = 'author=$id&$fieldsTxt=$userDataFields';
       final headers = {authorizationTxt: adminBasicAuth};
       final url = '$baseUrl$userDataEP?$query';
@@ -280,12 +281,15 @@ class AuthenticationServices {
         authorizationTxt: adminBasicAuth,
         contentTypeTxt: applicationJson,
       };
+      print("email is : $email");
       final url = '$baseUrl$usersEP?search=$email';
       final response = await http.get(
         Uri.parse(url),
         headers: headers,
       );
       if (response.statusCode == 200) {
+        print('get user byMail');
+        print(response.body);
         final Map<String, dynamic> customerData =
             (json.decode(response.body) as List<dynamic>).isNotEmpty
                 ? (json.decode(response.body) as List<dynamic>)[0]
@@ -546,6 +550,7 @@ class AuthenticationServices {
 
   Future<String> sendSmsOtp({required String phoneNumber}) async {
     try {
+      print("sendSmsOtp");
       final headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -554,7 +559,7 @@ class AuthenticationServices {
       const url = 'https://smssmartegypt.com/sms/api/otp-send';
       final Map data = {
         "username": "basita",
-        "password": "basita123456",
+        "password": "8D55F4*oS", //basita123456
         "sender": 'Basita',
         "mobile": phoneNumber,
         "lang": apiLanguageCode,
@@ -566,6 +571,8 @@ class AuthenticationServices {
         headers: headers,
         body: body,
       );
+      print(body);
+      print(response.body);
       if (response.statusCode == 200) {
         log(json.decode(response.body).toString());
         return response.body;
@@ -589,12 +596,14 @@ class AuthenticationServices {
       const url = 'https://smssmartegypt.com/sms/api/otp-check';
       final Map data = {
         "username": "basita",
-        "password": "basita123456",
+        "password": "8D55F4*oS",
         "mobile": phoneNumber,
         "otp": otp,
         "verify": true
       };
       final body = jsonEncode(data);
+      print('otp Body is::');
+      print(body.toString());
       final response = await http.post(
         Uri.parse(url),
         headers: headers,

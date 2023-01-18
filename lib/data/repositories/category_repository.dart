@@ -20,6 +20,7 @@ import 'package:intl/intl.dart' as intl;
 
 class CategoryRepository {
   final ProductServices _apiServices;
+
   CategoryRepository(this._apiServices);
 
   Future<AppText> getAppText() async {
@@ -243,7 +244,10 @@ class CategoryRepository {
       final data = json.decode(unformattedJson);
       for (final map in data) {
         final model = PartnerModel.fromMap(map as Map<String, dynamic>);
-
+        print("Partner image is ::");
+        print(model.name);
+        print(model.section!.title);
+        print(model.section!.fullImage);
         listOfModels.add(model);
       }
       return listOfModels;

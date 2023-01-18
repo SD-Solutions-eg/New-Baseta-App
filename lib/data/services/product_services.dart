@@ -277,12 +277,16 @@ class ProductServices {
     try {
       final query =
           '$fieldsTxt=$partnersFields&$featureTxt=1&$embedTxt=$featuredMediaEmbedded&$language';
+
       final headers = {authorizationTxt: adminBasicAuth};
+      print('url is ');
+      print('$baseUrl$partnersEP?$query');
       final response = await http.get(
         Uri.parse('$baseUrl$partnersEP?$query'),
         headers: headers,
       );
       if (response.statusCode == 200) {
+        log('getFeaturedPartners',error:response.body.toString());
         return response.body;
       } else {
         log('Get Partners Service Error :${response.reasonPhrase}\n ${response.body}');

@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "90349006730-eo6gum2cfvbnb5ghapnljqsb9l1orn3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scopelinks.basitaapp",
+            "certificate_hash": "4fdfe2474ec2ed1fa37996d62379af8717a6ca76"
+          }
+        },
+        {
           "client_id": "90349006730-k5tgn4fa9963p4r3f9tcftkitppfvopr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

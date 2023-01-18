@@ -1,4 +1,3 @@
-import 'package:allin1/core/constants/app_config.dart';
 import 'package:allin1/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -126,7 +125,6 @@ class AppTheme {
       iconTheme: const IconThemeData().copyWith(size: 16),
       colorScheme: ColorScheme.fromSwatch(
         accentColor: lightAccentAllin1,
-        primarySwatch: primarySwatch,
       ),
       sliderTheme: SliderThemeData(
           activeTickMarkColor: authBackgroundColor,

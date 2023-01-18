@@ -40,8 +40,11 @@ class GoogleCubit extends Cubit<GoogleState> {
         await GoogleSignIn().signOut();
         final userCredentials = await firebaseRepo.googleSignIn();
         UserModel? userModel;
+
         if (userCredentials.user != null) {
+
           if (userCredentials.additionalUserInfo!.isNewUser) {
+
             isNewUser = true;
             final generatedKey = Random().nextInt(99);
             final username =
@@ -55,8 +58,10 @@ class GoogleCubit extends Cubit<GoogleState> {
             await userCredentials.user!
                 .updateDisplayName(userModel.id.toString());
           } else {
+
             final id = int.tryParse(userCredentials.user!.displayName!);
             if (id != null) {
+
               userModel = await userRepo.getUserModel(id: id);
             } else {
               userModel = await userRepo.getUserByEmail(
